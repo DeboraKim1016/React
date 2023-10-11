@@ -36,7 +36,9 @@ const Player = () => {
     useEffect(()=>{
 
       console.log("Spring으로 요청")
-      let url="http://localhost:8089/SpringBoot2/PlayerList.do"
+      // let url="http://localhost:8089/SpringBoot2/PlayerList.do"
+      //AWS 주소
+      let url="http://13.209.7.78:8089/SpringBoot2/PlayerList.do"
 
     axios
     //Spring에서 보낸 Player.json파일에 접근

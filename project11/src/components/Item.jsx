@@ -25,7 +25,8 @@ const Item = ({name, position, imgSrc, index}) => {
         //React->Spring 데이터 전송
         console.log("detail 요청");
         //선수의 이름을 쿼리스트링 방식으로 Spring으로 보내기
-        let url='http://localhost:8089/SpringBoot2/PlayerDetail.do?name='+name;
+        //AWS 주소
+        let url='http://13.209.7.78:8089/SpringBoot2/PlayerDetail.do?name='+name;
 
         axios.get(url)
         .then((res)=>{
